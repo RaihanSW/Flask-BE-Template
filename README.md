@@ -38,3 +38,14 @@ if things go wrong, you can use "flask db downgrade" to reset the database updat
 
 4. Try running the app using command
 "python run.py"
+
+
+## Environment File Config
+CONFIGURATION_SETUP="config.DevelopmentConfig"
+DB_USER="change"
+DB_PASSWORD="change"
+DB_HOST="localhost"
+DB_PORT="change"
+DEPLOY_PLATFORM="DEV"
+DB_NAME="change"
+SECRET_KEY="change"
