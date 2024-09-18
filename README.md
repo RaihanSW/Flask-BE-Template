@@ -18,7 +18,10 @@ the command will enable our work folder to do virtual environment
 In the command prompt where we have our codebase and venv set
 
 4. Afterwards, install all the dependencies in requirements.txt
-"pip install -r requirements.txt"
+- comment the "python-magic-bin" first
+- "pip install -r requirements.txt"
+- uncomment the "python-magic-bin"
+- pip install again
 
 5. Set up a .env file, ask for other developers for the .env variables value
 
