@@ -74,12 +74,12 @@ def saveupdate_roles():
             
             known_roles = Roles()
             known_roles.rowstatus = 1
-            known_roles.created_by = current_user.username
+            known_roles.created_by = "admin" if current_user.is_anonymous else current_user.username
             known_roles.created_date = get_wib_date()
 
         known_roles.name = name
 
-        known_roles.modified_by = current_user.username
+        known_roles.modified_by = "admin" if current_user.is_anonymous else current_user.username
         known_roles.modified_date = get_wib_date()
 
         db.session.add(known_roles)
